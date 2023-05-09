@@ -7,7 +7,12 @@ body {
 }
 main {
   margin-bottom: 80px;
+  margin: 1em;
 }
+.main-head {
+  text-align: center;
+}
+/* Barra de navegación */
 nav {
   width: 100%;
   margin: 0;
@@ -44,9 +49,7 @@ nav .nav-right {
 .hide {
   display: none;
 }
-main {
-  margin: 1em;
-}
+/* Grid pagina */
 .grid-container {
   display: grid;
   grid-template-columns: 70% auto;
@@ -66,7 +69,7 @@ main {
   border-collapse: collapse;
 }
 .grid-container .item-left table td,
-th {
+.grid-container .item-left table th {
   border-bottom: 1px solid #b3b2b2;
 }
 .grid-container .item-left table th {
@@ -108,6 +111,23 @@ th {
 .grid-container .item-right table tr:last-child td {
   border-bottom: none;
 }
+/* Tabla clientes en pagina clientes.html */
+.full-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.full-table th,
+.full-table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b3b2b2;
+}
+.full-table button {
+  background: none;
+  border: none;
+}
+/* Footer */
 footer {
   background-color: #212529;
   color: #dfdedf;
@@ -116,10 +136,12 @@ footer {
   width: 100%;
   padding: 5px;
 }
+/* Estilos pantalla pequeña (sitio web movil) */
 @media (max-width: 768px) {
   main {
     margin-bottom: 0px;
   }
+  /* Barra de navegacion */
   nav {
     height: auto;
   }
@@ -150,6 +172,7 @@ footer {
     padding: 5px;
     border: none;
   }
+  /* Animación barra de navegación */
   .menu-active {
     animation: menu-icon-active 0.3s ease-out forwards;
   }
@@ -175,6 +198,7 @@ footer {
   .nav-button div {
     padding: 0;
   }
+  /* Grid pagina */
   .grid-container {
     display: grid;
     grid-template-columns: 100%;
@@ -186,6 +210,7 @@ footer {
     gap: 10px;
     padding: 10px;
   }
+  /* Footer */
   footer {
     position: relative;
     margin-top: 80px;
